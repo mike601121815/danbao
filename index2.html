@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>成长企业创新担保有限公司</title>
+<meta name="description" content=""  />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js" /></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" /></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$(".main-navigation .m").hover(function(){
+		var itemwidth = $(this).width(); /* Getting the LI width */
+		$(this).prepend("<div class='hover'></div>"); /* Inserting a blank div into within li above the <a> tag*/
+		$(this).find("div").fadeIn('10000').css({ 'width' : itemwidth}); /* Using the itemwidth for the div to display properly*/
+		$(this).find("ul").fadeIn('1000').slideDown('10000').css("display", "block");
+		
+	},function(){
+		$(this).find("div").slideUp('1000').fadeOut('1000');/* sliding up and fading out the hover div */
+		$(this).find("div").remove();/* removing the <div> code from html at every mouseout event*/
+		$(this).find("ul").fadeOut('1000'); /* fading out the sub menu */
+		
+	});
+
+});
+</script>
+</head>
+
+<body>
+<!-- 顶部开始 -->
+	<div class="top">
+		<div class="sub-con">
+			<ul class="top-list">
+				<li><a href="#">官方微博</a> ｜</li>
+				<li><a href="#">电子邮箱</a> ｜ </li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 导航开始 -->
+<div class="nav">
+	<div class="sub-con">
+		<div class="logo">
+			<a href="#"><img src="images/logo.jpg" alt="" /></a>
+		</div>
+		<div class="main-navigation">
+		<ul>
+			<li class="m"><a class="ma" href="#">首页</a></li>
+			<li class="m">
+				<a class="ma" href="#">关于我们</a>
+				<ul class="sub-nav">
+					<li><a href="#">公司简介</a></li>
+					<li><a href="#">董事长致辞</a></li>
+					<li><a href="#">企业文化</a></li>
+				</ul>
+			</li>
+			<li class="m">
+				<a class="ma" href="#">业务领域</a>
+				<ul class="sub-nav">
+					<li><a href="#">财产保全类担保</a></li>
+					<li><a href="#">财产保全类担保</a></li>
+					<li><a href="#">财产保全类担保</a></li>
+					<li><a href="#">财产保全类担保</a></li>
+					<li><a href="#">财产保全类担保</a></li>
+				</ul>
+			</li>
+			<li class="m">
+				<a class="ma" href="#">新闻资讯</a>
+				<ul class="sub-nav">
+					<li><a href="#">公司动态</a></li>
+					<li><a href="#">公司动态</a></li>
+					<li><a href="#">公司动态</a></li>
+				</ul>
+			</li>
+			<li class="m">
+				<a class="ma" href="#">政策法规</a>
+				<ul class="sub-nav">
+					<li><a href="#">担保行业政策法规</a></li>
+					<li><a href="#">担保行业政策法规</a></li>
+					<li><a href="#">担保行业政策法规</a></li>
+				</ul>
+			</li>
+			<li class="m"><a class="ma" href="#">社会责任</a></li>
+			<li class="m"><a class="ma" href="#">人才招聘</a></li>
+			<li class="m"><a class="ma" href="#">联系我们</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
